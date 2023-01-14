@@ -1,3 +1,4 @@
+package estudo.introducao
 //Verificações de Igualdades: '==' e '==='
 fun igualdade(){
     val autores = setOf("Shakespeare", "Hemingway", "Twain")

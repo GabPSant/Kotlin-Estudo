@@ -1,3 +1,4 @@
+package estudo.colecao
 //Lista (List)
 private val usuarios:MutableList<Int> = mutableListOf()//Lista mutavel
 private val usuariosRegistrados:List<Int> = usuarios//Lista imutavel, não pode adicionar elementos de forma posterior

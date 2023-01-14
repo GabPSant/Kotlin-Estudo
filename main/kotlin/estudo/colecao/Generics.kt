@@ -1,4 +1,4 @@
-package estudo
+package estudo.colecao
 
 class estudo<E>(vararg estudo:E){
     private val elementos = estudo.toMutableList()

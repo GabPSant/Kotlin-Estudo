@@ -1,3 +1,4 @@
+package estudo.controle
 //Range (analise de loops por Int), tambem funciona com valores Char
 fun range(){
     //Retorna os valores crescentes de 0 até 3
