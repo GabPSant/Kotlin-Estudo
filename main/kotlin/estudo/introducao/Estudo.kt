@@ -1,24 +1,17 @@
 package estudo.introducao
 
-class Estudo {
-    fun aluno(nota1:Double = 0.0,nota2:Double = 0.0):Double{//Nota de cada Aluno
-        return (nota1+nota2)/2
-    }
-    fun turma(alunos:Int = 0):Int{// Quantidade de alunos na turma de tal professor
-        return alunos
-    }
-    fun media():Double{// Media geral da turma
-        // Preciso entender como fazer o for
+class Estudo {//Classes não vão definir as funções como uma analise sequencial, eles só armazenam
+    fun media(x:Double = 7.0,y:Double = 7.0) = (x+y)/2
+    fun turma(alunos:Int):Double{
         var resultado:Double = 0.0
-        for(i in 1..turma()){
-            resultado =+ aluno()
+        for (i in 1..alunos){
+            resultado += media()
         }
-        return resultado/turma()
+        return resultado/alunos
     }
 }
 fun main(){
-    // Não compreendo esse erro
     val estudo = Estudo()
-    estudo.aluno(7.0,7.0)
-    println("Alunos na turma: ${estudo.turma(30)}\nMedia geral: ${estudo.media()}")
+    estudo.media(5.0,5.0)
+    println("Media da turma: ${estudo.turma(30)}")//Como são considerados funções separadas, vai usar os valores padrões
 }
